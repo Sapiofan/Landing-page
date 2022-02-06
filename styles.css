@@ -79,10 +79,11 @@ nav > a {
     display: inline-block;
     text-decoration: none;
     margin: 15px 40px 0 0;
+    color: #f3f3f3;
 }
 
 nav > a:hover, nav > a:active {
-    color: #208bd1;
+    color: #00A6FF;
 }
 
 .who_we_are_block {
