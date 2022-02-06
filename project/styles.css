@@ -40,6 +40,11 @@ body {
     height: 900px;
 }
 
+.head_section nav {
+    position: fixed;
+    right: 0;
+}
+
 .gif {
     position: absolute;
     left: 30%;
@@ -234,7 +239,7 @@ nav > a:hover, nav > a:active {
 main {
     position: relative;
     z-index: 2;
-/ / height: 2800 px;
+    margin-bottom: 250px;
 }
 
 /*///////////////////////////////////////////*/
@@ -302,7 +307,7 @@ main {
 
 
 .videos-block {
-/ / position: absolute;
+    /* position: absolute; */
     background-image: url(https://static.wixstatic.com/media/79e810_afbb9d21aeec4d59b53210b29684d894~mv2.png/v1/crop/x_0,y_0,w_300,h_300,q_85/79e810_afbb9d21aeec4d59b53210b29684d894~mv2.webp&quot;);
 }
 
