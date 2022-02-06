@@ -72,6 +72,7 @@ body {
 nav {
     float: right;
     padding-right: 20px;
+    z-index: 2;
 }
 
 nav > a {
