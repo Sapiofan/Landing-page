@@ -38,19 +38,18 @@
                 <a data-langkey="Nav-The-Process" href="#process">The Process</a>
                 <a data-langkey="Nav-Contact" href="#contact_us">Contact</a>
                 <div id='languages'>
-                    <button class='language active' data-lang='britain'>en</button>
-                    <button class='language' data-lang='ukraine'>ua</button>
+                    <button id="en" onclick="changePlaceholder()" class='language active' data-lang='britain'>en</button>
+                    <button class='language' onclick="changePlaceholder()" data-lang='ukraine'>ua</button>
                 </div>
             </nav>
-            <div class="gif">
+            <div class="gif" id="gif">
                 <img src="./images/robot.gif" alt="">
                 <p data-langkey="gif-title" class="gif_title">Tech videos & Films.</p>
                 <div class="gif_description">
-                    <p data-langkey="gif-desc">
+                    <p id="gif-text" class="gif-text">
                         Sight is about to receive a full length adaptation.<br/>
                         For more details: <a data-langkey="link" href="https://www.sightextended.com">www.sightextended.com</a>
                     </p>
-                    <!-- <a data-langkey="link" href="https://www.sightextended.com">www.sightextended.com</a> -->
                 </div>
             </div>
         </div>
@@ -302,11 +301,11 @@
                <div class="feedback-right-side">
                    <form action="#">
                        <div id="necessary">
-                           <input class="inline-input" type="text" placeholder="Name *">
-                           <input class="inline-input" type="email" placeholder="Email *">
+                           <input id="Name" class="inline-input" type="text" placeholder="Name *">
+                           <input id="Email" class="inline-input" type="email" placeholder="Email *">
                        </div>
-                       <input class="full-line" type="text" placeholder="Subject">
-                       <textarea placeholder="Message"></textarea>
+                       <input id="Subject" class="full-line" type="text" placeholder="Subject">
+                       <textarea id="Message" placeholder="Message"></textarea>
                        <button data-langkey="Send" class="send">Send message</button>
                    </form>
                </div>
@@ -349,5 +348,6 @@
   });
 </script>
 <script src="js/localization.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>
 </html>

@@ -49,3 +49,34 @@ buttons.forEach(button => {
     button.classList.add('active');
     });
 });
+
+function changePlaceholder() {
+    var el = document.getElementById("en");
+    if((' ' + el.className + ' ').indexOf(' ' + 'active' + ' ') > -1){
+        document.getElementById("Name").placeholder = "Ім'я *";
+        document.getElementById("Email").placeholder = "Емейл *";
+        document.getElementById("Subject").placeholder = "Тема";
+        document.getElementById("Message").placeholder = "Повідомлення";
+
+        document.getElementById("gif").style.left = "25%"
+        var newHTML = '<p id="gif-text" class="gif-text">' +
+        'Ваш погляд ось-ось отримує повну адаптацію.<br/>' +
+        'Детальніше: <a href="https://www.sightextended.com">www.sightextended.com</a>' +
+        '</p>'
+        $('p.gif-text').replaceWith(newHTML);
+    }
+    else{
+        document.getElementById("Name").placeholder = "Name *";
+        document.getElementById("Email").placeholder = "Email *";
+        document.getElementById("Subject").placeholder = "Subject";
+        document.getElementById("Message").placeholder = "Message";
+
+        document.getElementById("gif").style.left = "30%"
+
+        var newHTML = '<p id="gif-text" class="gif-text">' +
+        'Sight is about to receive a full length adaptation.<br/>' +
+        'For more details: <a href="https://www.sightextended.com">www.sightextended.com</a>' +
+        '</p>'
+        $('p.gif-text').replaceWith(newHTML);
+    }
+  }
