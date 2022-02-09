@@ -89,12 +89,12 @@ nav {
 
 .button:active,
 .active {
-  border: #f3f3f3 solid 1px;
-  background: transparent;
-  color: #f3f3f3;
-  width: 50px;
-  height: 25px;
-  font-family: "Helvetica Neue Cyr Bold", sans-serif;
+    border: #f3f3f3 solid 1px;
+    background: transparent;
+    color: #f3f3f3;
+    width: 50px;
+    height: 25px;
+    font-family: "Helvetica Neue Cyr Bold", sans-serif;
 }
 
 nav > a {
@@ -270,7 +270,7 @@ main {
 /*////////////// OUR WORK ///////////////////*/
 /*///////////////////////////////////////////*/
 
-.our_work {
+.our_work, .discount_block {
     background-image: url(https://static.wixstatic.com/media/79e810_afbb9d21aeec4d59b53210b29684d894~mv2.png/v1/crop/x_0,y_0,w_300,h_300,q_85/79e810_afbb9d21aeec4d59b53210b29684d894~mv2.webp&quot;);
 }
 
@@ -553,6 +553,35 @@ footer {
 .lake, .lake-img {
     width: 100%;
 }
+
 a {
     color: #00A6FF;
+}
+
+.discount_block {
+    height: 300px;
+    position: relative;
+}
+
+.discount_logo > img {
+    position: absolute;
+    bottom: 0;
+    left: 88px;
+}
+
+.discount_block > div > p {
+    font-size: 24px;
+    top: 101px;
+    right: 324px;
+    position: absolute;
+    color: #F3F3F3;
+}
+
+.discount_block > div > p:last-child {
+    position: absolute;
+    font-size: 55px;
+    top: 145px;
+    right: 219px;
+    color: #FFF279;
+    font-family: "Helvetica Neue Cyr Bold", sans-serif;
 }
